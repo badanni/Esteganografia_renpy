@@ -1,0 +1,26 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/esteganografia.rpy", line 26, in script
+    init python:
+  File "game/esteganografia.rpy", line 151, in <module>
+    print(esteganografia_leer("output.png"))
+TypeError: __init__() should return None, not 'unicode'
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/esteganografia.rpy", line 26, in script
+    init python:
+  File "C:\Users\badanni\Desktop\visual\renpy-7.2.2-sdk\renpy\ast.py", line 914, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "C:\Users\badanni\Desktop\visual\renpy-7.2.2-sdk\renpy\python.py", line 2028, in py_exec_bytecode
+    exec bytecode in globals, locals
+  File "game/esteganografia.rpy", line 151, in <module>
+    print(esteganografia_leer("output.png"))
+TypeError: __init__() should return None, not 'unicode'
+
+Windows-8-6.2.9200
+Ren'Py 7.3.5.606
+ 
+Sun Feb 09 16:20:37 2020

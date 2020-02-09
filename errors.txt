@@ -1,0 +1,11 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/esteganografia.rpy", line 95: invalid syntax
+    a=esteganografia_escribir("hola"*76801‬,"oveja.png","output.png")
+                                           ^
+    
+
+Ren'Py Version: Ren'Py 7.3.5.606
+Sun Feb 09 15:16:00 2020
