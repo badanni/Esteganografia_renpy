@@ -29,7 +29,7 @@ label start:
     $ print(renpy.get_attributes("oveja"))
     $ mensaje=renpy.input("Insert you message here")
     $ a=esteganografia_escribir(mensaje,"images/oveja.png","images/output.png")
-    e "Guardastes el mensaje en el siguiente archivo."
+    e "Guardaste el mensaje en el siguiente archivo."
     show expression "images/output.png" at topright
     $ mensaje_foto=esteganografia_leer("output.png").leer_texto()
     e "El mensaje es el siguiente:"
