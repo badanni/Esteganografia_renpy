@@ -1,6 +1,7 @@
-# Esteganografía en RenPy
+# Esteganografía con imágenes en LSB con RenPy
 
 Codigo basado en el trabajo de [parzibyte](https://github.com/parzibyte/esteganografia-python)
+Una explicacion sencilla se encuentra en el siguiente [blog](https://parzibyte.me/blog/2018/04/05/esteganografia-imagenes-lsb/)
 
     # These display lines of dialogue.
     show oveja at topleft
