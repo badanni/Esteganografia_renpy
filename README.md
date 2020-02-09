@@ -1,4 +1,4 @@
-# Estenografia en RenPy
+# Esteganografía en RenPy
 
 Codigo basado en el trabajo de [parzibyte](https://github.com/parzibyte/esteganografia-python)
 
