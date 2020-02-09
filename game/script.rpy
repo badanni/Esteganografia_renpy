@@ -2,6 +2,8 @@
 
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
+image black = "#000000"
+image oveja = "images/oveja.png"
 
 define e = Character("Eileen")
 
@@ -14,19 +16,24 @@ label start:
     # add a file (named either "bg room.png" or "bg room.jpg") to the
     # images directory to show it.
 
-    scene bg room
+    scene black
 
     # This shows a character sprite. A placeholder is used, but you can
     # replace it by adding a file named "eileen happy.png" to the images
     # directory.
 
-    show eileen happy
+    show eileen
 
     # These display lines of dialogue.
-
-    e "You've created a new Ren'Py game."
-
-    e "Once you add a story, pictures, and music, you can release it to the world!"
+    show oveja at topleft
+    $ print(renpy.get_attributes("oveja"))
+    $ mensaje=renpy.input("Insert you message here")
+    $ a=esteganografia_escribir(mensaje,"images/oveja.png","images/output.png")
+    e "Guardastes el mensaje en el siguiente archivo."
+    show expression "images/output.png" at topright
+    $ mensaje_foto=esteganografia_leer("output.png").leer_texto()
+    e "El mensaje es el siguiente:"
+    e "[mensaje_foto]"
 
     # This ends the game.
 

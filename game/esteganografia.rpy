@@ -92,12 +92,12 @@ init python:
               continue
             break
         if contador >= longitud:
-            print("Mensaje escrito correctamente")
+            renpy.notify("Mensaje creado exitosamente en %s" % fname_out)
         else:
             #print("Advertencia: no se pudo escribir todo el mensaje, sobraron {} caracteres".format( math.floor((longitud - contador) / 8) ))
             renpy.error("Supero las dimensiones de la imagen; contador= %s" % contador)
         direccion=config.gamedir
-        pygame.image.save(surface,direccion.replace("\\","/")+"/output.png")
+        pygame.image.save(surface,direccion.replace("\\","/")+"/"+fname_out)
     class esteganografia_leer(object):
       def __init__(self,fname):
         self.caracter_terminacion = "11111111"
@@ -158,5 +158,5 @@ init python:
             break
         return mensaje
         
-    a=esteganografia_escribir("hola como estas?","oveja2.png","output.png")
-    print(esteganografia_leer("output.png").leer_texto())
+    #a=esteganografia_escribir("hola como estas?","oveja2.png","output.png")
+    #print(esteganografia_leer("output.png").leer_texto())
