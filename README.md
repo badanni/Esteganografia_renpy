@@ -3,6 +3,7 @@
 * Codigo basado en el trabajo de [parzibyte](https://github.com/parzibyte/esteganografia-python)
 * Una explicacion sencilla se encuentra en el siguiente [blog](https://parzibyte.me/blog/2018/04/05/esteganografia-imagenes-lsb/)
 
+## Como usarlo
 ~~~~
 show oveja at topleft
 $ mensaje=renpy.input("Insert you message here")
@@ -14,4 +15,3 @@ e "El mensaje es el siguiente:"
 e "[mensaje_foto]"
 ~~~~
 
-asdaasdasd
