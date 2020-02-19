@@ -50,6 +50,7 @@ init python:
         b=im.Data(a,fname)
         #surface_pygame=im.load_surface(b)
         surface=renpy.display.pgrender.load_image(renpy.loader.load(fname), fname)
+        #im.load_surface(filename)
         dimensiones=surface.get_size()
         anchura=dimensiones[0]
         altura=dimensiones[1]
